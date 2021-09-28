@@ -1,8 +1,8 @@
 pipeline {
     environment {
-        HARBOR_URL = "harbor.clouddari.com"
+        HARBOR_URL = "3.38.117.2"
         CI_PROJECT_PATH = "samsung"
-        BRANCH = "release"
+        BRANCH = "develop"
         APP_NAME = "samsung"
     }
     agent {
