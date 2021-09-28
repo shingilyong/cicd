@@ -57,8 +57,6 @@ spec:
         stage('image build') {
             steps {
                 container('kaniko') {
-                    sh 'ls -al && pwd'
-                    sh 'ls -al build/libs/'
                     sh '/kaniko/executor --context ./ --dockerfile ./dockerfile --destination $HARBOR_URL/$CI_PROJECT_PATH/$BRANCH/$APP_NAME:$BUILD_TAG --skip-tls-verify-pull --skip-tls-verify --insecure --insecure-pull'
                 }
             }
