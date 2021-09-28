@@ -2,7 +2,7 @@ pipeline {
     environment {
         HARBOR_URL = "3.38.117.2"
         CI_PROJECT_PATH = "samsung"
-        BRANCH = "develop"
+        BRANCH = "release"
         APP_NAME = "samsung"
     }
     agent {
