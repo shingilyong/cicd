@@ -61,7 +61,7 @@ spec:
                 }
             }
         }
-        stage('deploy') {
+        stage('deploy1') {
             steps {
                 container('helm') {
                     sh 'helm upgrade --install --set image.tag=${BUILD_TAG} -n $BRANCH --create-namespace $APP_NAME ./helm-deploy/helm'
