@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        HARBOR_URL = "3.38.117.2"
+        HARBOR_URL = "13.125.172.224"
         CI_PROJECT_PATH = "samsung"
         BRANCH = "release"
         APP_NAME = "samsung"
